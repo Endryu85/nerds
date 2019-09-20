@@ -7,13 +7,13 @@
 <body>
 	<header class="main-header">
 		<nav class="main-navigation">
-			<a class="main-header-logo">
-				<img src="img/index-logo.svg" alt="Логотип дизайн-студии «Нёрдс»">
+			<a class="main-header-logo" href="index.html">
+				<img src="img/logo.svg" width="111" height="24" alt="Логотип дизайн-студии «Нёрдс»">
 			</a>
 			<ul class="site-navigation">
 				<li><a href="#">СТУДИЯ</a></li>
 				<li><a href="#">КЛИЕНТЫ</a></li>
-				<li><a href="catalog.html">МАГАЗИНЫ</a></li>
+				<li class="site-navigation-current"><a href="catalog.html">МАГАЗИНЫ</a></li>
 				<li><a href="#">КОНТАКТЫ</a></li>
 			</ul>
 			<ul class="cart-navigation">
@@ -22,6 +22,82 @@
 		</nav>
 		<h1>Магазин готовых шаблонов</h1>
 	</header>
-	
+	<main class="container">
+		<section class="visually-hidden">Фильтр товаров</section>
+
+		<section class="catalog">
+			<h2 class="visually-hidden">Шаблоны</h2>
+			<ul class="catalog-list">
+				<li class="catalog-item">
+					<p>
+						<a href="catalog-item-image">
+							<img src="img/product-1.jpg" width="220" height="165" alt="Вариант №1">
+						</a>
+					</p>
+				</li>
+				<li class="catalog-item">
+					<p>
+						<a href="catalog-item-image">
+							<img src="img/product-1.jpg" width="220" height="165" alt="Вариант №2">
+						</a>
+					</p>
+				</li>
+				<li class="catalog-item">
+					<p>
+						<a href="catalog-item-image">
+							<img src="img/product-1.jpg" width="220" height="165" alt="Вариант №3">
+						</a>
+					</p>
+				</li>
+				<li class="catalog-item">
+					<p>
+						<a href="catalog-item-image">
+							<img src="img/product-1.jpg" width="220" height="165" alt="Вариант №4">
+						</a>
+					</p>
+				</li>
+				<li class="catalog-item">
+					<p>
+						<a href="catalog-item-image">
+							<img src="img/product-1.jpg" width="220" height="165" alt="Вариант №5">
+						</a>
+					</p>
+				</li>
+				<li class="catalog-item">
+					<p>
+						<a href="catalog-item-image">
+							<img src="img/product-1.jpg" width="220" height="165" alt="Вариант №6">
+						</a>
+					</p>
+				</li>
+			</ul>
+			<ul class="pagination-list">
+				<li class="pagination-item"><a href="#">1</a></li>
+				<li class="pagination-item" class="pagination-item-current">2</li></li>
+				<li class="pagination-item"><a href="#">3</a></li>
+				<li class="pagination-item"><a href="#">Следующая</a></li>
+		</ul>
+		<footer class="main-footer">
+			<div class="footer-social">
+				<ul>
+					<li>
+						<a href="#" class="social-button">Вконтакте</a>
+					</li>
+					<li>
+						<a href="#" class="social-button">Фейсбук</a>
+					</li>
+					<li>
+						<a href="#" class="social-button">Инстаграм</a>
+					</li>
+				</ul>
+				<b>
+					Давайте дружить, это выгодно!<br>
+					Скидка 10% для друзей из социальных сетей.
+				</b>
+			</div>
+		</footer>
+		</section>
+
+	</main>
 </body>
 </html>
