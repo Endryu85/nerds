@@ -28,6 +28,31 @@ a {
 	color: #000;
 }
 
+.site-navigation a:hover,
+.site-navigation a:focus,
+.cart-navigation a:hover,
+.cart-navigation a:focus {
+ color: #fb565a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
