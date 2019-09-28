@@ -27,16 +27,34 @@
 				</li>
 			</ul>
 		</nav>
+		<div class="index-slider">
+			<section class="slider-info">
+				<p class="slider-text">Долго, дорого,<br>скрупулезно.</p>
+				<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+			  <a href="#" class="button">УЗНАТЬ БОЛЬШЕ</a>
+			</section>
+
+			<section class="slider-image">
+				<figure class="image-content">
+					<a href="#">
+						<img src="img/slide1.png" width="698" height="413" alt="Изображение">
+					</a>
+				</figure>
+			</section>
+		</div>
 	</header>
+
 	<main class="container">
-		<h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
+	 	<section class="category">
+			<h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
 			<h2 class="visually-hidden">Категории</h2>
 			<ul class="category-list">
 				<li class="category-item">
 					<p>
 						<img src="img/illustration-1.jpg" width="300" height="145"  alt="Веб-сайты">
 					</p>
-					<span class="catalog-category">ВЕБ-САЙТЫ</span>
+						<h3>ВЕБ-САЙТЫ</h3>
+					<!-- <span class="catalog-category">ВЕБ-САЙТЫ</span> -->
 					<p>
 						<p class="catalog-item-order">
 							<a href="#" class="button">Заказать</a>
@@ -46,7 +64,8 @@
 				<p>
 					<img src="img/illustration-2.jpg" width="300" height="145" alt="Приложения">
 				</p>
-					<span class="catalog-category">ПРИЛОЖЕНИЯ</span>
+					<h3>ПРИЛОЖЕНИЯ</h3>
+					<!-- <span class="catalog-category">ПРИЛОЖЕНИЯ</span> -->
 					<p class="catalog-item-order">
 						<a href="#" class="button">Заказать</a>
 					</p>
@@ -55,7 +74,8 @@
 					<p>
 						<img src="img/illustration-3.jpg" width="300" height="145" alt="ПРЕЗЕНТАЦИЯ">
 					</p>
-					<span class="catalog-category">ПРЕЗЕНТАЦИЯ</span>
+						<h3>ПРЕЗЕНТАЦИЯ</h3>
+					<!-- <span class="catalog-category">ПРЕЗЕНТАЦИЯ</span> -->
 					<p class="catalog-item-order">
 						<a href="#" class="button">Заказать</a>
 					</p>
@@ -77,12 +97,31 @@
 				</ul>
 			</div>
 			<div class="footer-frends">
-				<b>
-					Давайте дружить, это выгодно!<br>
-					Скидка 10% для друзей из социальных сетей.
+				<h3>Давайте дружить, это выгодно!</h3>
+					<p>Скидка 10% для друзей из социальных сетей.</p>
 				</b>
 			</div>
 		</footer>
+
+		<section class="modal modal-writeus">
+			<form action="" class="writeus-modal" method="post">
+				<h2>Напишите нам</h2>
+				<p>
+					<label for="user-name">Ваше имя:</label>
+					<input type="text" id="user-name" name="name" placeholder="Имя Фамилия">
+				</p>
+				<p>
+					<label for="e-mail">Ваш e-mail:</label>
+					<input type="text" id="e-mail" name="mail" placeholder="email@example.com">
+			  </p>
+				<p>
+					<label for="placeholder">Текст письма:</label>
+					<input type="text" id="placeholder" name="placeholder" placeholder="В свободной форме">
+				</p>
+			</form>
+			<button class="modal-close" type="button">Закрыть</button>
+		</section>
+		
 	</main>
 
 </body>

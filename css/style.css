@@ -11,6 +11,18 @@ a {
 	text-decoration: none;
 }
 
+.button {
+	font: inherit;
+
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	background: #000000;
+	border: none;
+}
+
 .main-navigation {
 	font-size: 16px;
 	line-height: 30px;
@@ -29,17 +41,84 @@ a {
 }
 
 .site-navigation a:hover,
-.site-navigation a:focus,
-.cart-navigation a:hover,
-.cart-navigation a:focus {
- color: #fb565a;
+.site-navigation a:focus {
+  color: #fb565a;
 }
 
+.slider-info .button {
+	background: #fb565a;
+}
 
+.slider-info a:hover {
+	background: #e74246;
+}
 
+.slider-info a:focus {
+	background: #d7373b;
+}
 
+.slider-text {
+	font-size: 55px;
+	line-height: 55px;
+}
 
+.slider-info a {
+	padding: 20px 55px;
 
+	background-color: #000;
+	color: #ffffff;
+}
+
+.category-list {
+	list-style: none;
+}
+
+.category-item {
+	text-align: center;
+}
+
+.catalog-category h3{
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.footer-social,
+.footer-frends {
+	text-align: center;	
+}
+
+.footer-social ul {
+	list-style: none;	
+}
+
+.footer-frends h3 {
+	font-size: 36px;
+	line-height: 36px;
+}
+
+.modal {
+  color: #000000;
+}
+
+.writeus-modal h2 {
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.writeus-modal input[type="text"]{
+	font: inherit;
+	border: 2px solid #d7dcde;
+}
+
+.writeus-modal input:hover {
+	border: 2px solid #b4b9bb;
+}
+
+.writeus-modal input:focus {
+	border: 2px solid #000000;
+}
+
+/*прописать стили для рамки невалидного ввода данных формы*/
 
 
 
