@@ -1,5 +1,5 @@
 body {
- font-family: 'Roboto Condensed', sans-serif;
+ 	font-family: "RobotoRegular", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 700;
@@ -24,6 +24,7 @@ a {
 }
 
 .main-navigation {
+	font-family: "RobotoMedium", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 30px;
 
@@ -57,7 +58,8 @@ a {
 	background: #d7373b;
 }
 
-.slider-text {
+.slider-info h2 {
+	font-family: "RobotoMedium", Arial, sans-serif;
 	font-size: 55px;
 	line-height: 55px;
 }
@@ -71,6 +73,11 @@ a {
 
 .category-list {
 	list-style: none;
+}
+
+.category-list h3 {
+	font-family: "RobotoBold", Arial, sans-serif;
+	list-style: none; 
 }
 
 .category-item {
@@ -92,6 +99,8 @@ a {
 }
 
 .footer-frends h3 {
+	font-family: "RobotoBold", Arial, sans-serif;
+
 	font-size: 36px;
 	line-height: 36px;
 }
@@ -101,6 +110,8 @@ a {
 }
 
 .writeus-modal h2 {
+	font-family: "RobotoMedium", Arial, sans-serif;
+
 	font-size: 45px;
 	line-height: 45px;
 }
@@ -119,6 +130,8 @@ a {
 }
 
 /*прописать стили для рамки невалидного ввода данных формы*/
+
+
 
 
 
