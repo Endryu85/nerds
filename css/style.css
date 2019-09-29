@@ -23,7 +23,20 @@ a {
 	border: none;
 }
 
+.main-header {
+	margin-bottom: 75px;
+}
+
+.main-header-logo {
+	/*Временно для сетки*/
+ display: block;
+}
+
 .main-navigation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 	font-family: "RobotoMedium", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 30px;
@@ -31,9 +44,35 @@ a {
 	background-color: #eeeeee;
 }
 
-.site-navigation,
-.cart-navigation {
+.container {
+	width: 1160px;
+}
+
+.site-navigation {
+	width: 660px;
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
+
+	/*Временно для сетки*/
+  min-height: 70px;
+}
+
+.cart-navigation {
+	width: 200px;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+
+	/*Временно для сетки*/
+  min-height: 70px;
+}
+
+.main-header-logo {
+	width: 160px;
+	height: 65px;
 }
 
 .site-navigation a,
@@ -42,7 +81,9 @@ a {
 }
 
 .site-navigation a:hover,
-.site-navigation a:focus {
+.cart-navigation a:hover,
+.site-navigation a:focus,
+.cart-navigation a:focus{
   color: #fb565a;
 }
 

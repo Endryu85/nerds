@@ -3,16 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Каталог</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,700&display=swap" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,700&display=swap" rel="stylesheet"> -->
+	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 	<header class="main-header">
 		<nav class="main-navigation">
-			<a class="main-header-logo" href="index.html">
-				<img src="img/nerds-logo.svg" width="111" height="24" alt="Логотип дизайн-студии «Нёрдс»">
-			</a>
+			<div class="container">
+				<a class="main-header-logo" href="index.html">
+				 <img src="img/nerds-logo.svg" width="111" height="24" alt="Логотип дизайн-студии «Нёрдс»">
+			  </a>
 			<ul class="site-navigation">
 				<li><a href="#">СТУДИЯ</a></li>
 				<li><a href="#">КЛИЕНТЫ</a></li>
@@ -20,8 +23,13 @@
 				<li><a href="#">КОНТАКТЫ</a></li>
 			</ul>
 			<ul class="cart-navigation">
-				<li class="cart-link">КОРЗИНА</li>
+				<li>
+				 	<a class="cart-link" href="#">
+				 		КОРЗИНА
+					</a>
+				</li>
 			</ul>
+		</div>
 		</nav>
 		<h1>Магазин готовых шаблонов</h1>
 	</header>
