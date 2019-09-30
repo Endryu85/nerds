@@ -94,6 +94,7 @@ a {
 .index-slider {
 	display: flex;
 	margin: 0 auto;
+	margin-bottom: 80px; 
 
 	background-color: #eeeeee;
 }
@@ -120,6 +121,7 @@ a {
 	color: #ffffff;
 }
 
+
 .category-list  {
 	display: flex;
 	justify-content: space-between;
@@ -139,26 +141,42 @@ a {
 }
 
 /*что это?откуда взялось?*/
-/*.catalog-category h3{
+.catalog-category h3{
 	font-size: 24px;
 	line-height: 30px;
-}*/
+}
 
-.footer-social,
+.main-footer {
+	padding: 70px 0;
+}
+
+.main-footer .container {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.footer-social {
+	width: 260px;
+	padding: 0;
+}
+
 .footer-frends {
-	text-align: center;	
+	width: 560px;
+	margin-left: 140px;
 }
 
 .footer-social ul {
+	padding-left: 0;
 	list-style: none;	
 }
 
 .footer-frends h3 {
 	font-family: "RobotoBold", Arial, sans-serif;
-
-	font-size: 36px;
+ font-size: 36px;
 	line-height: 36px;
 }
+
+
 
 .modal {
   color: #000000;
@@ -192,11 +210,16 @@ a {
 /*Мои мысли насчет содержимого в меню*/
 .site-navigation {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	justify-content: space-between;
+
+	padding: 50px 0;
 }
 
-
+.main-navigation-wrapper .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 
 
 
