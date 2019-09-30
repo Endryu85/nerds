@@ -92,6 +92,9 @@ a {
 
 /*как-то убрать верхний margin. И откуда он взялся?*/
 .index-slider {
+	display: flex;
+	margin: 0 auto;
+
 	background-color: #eeeeee;
 }
 
@@ -117,10 +120,13 @@ a {
 	color: #ffffff;
 }
 
-.category-list {
+.category-list  {
 	display: flex;
 	justify-content: space-between;
+
 	list-style: none;
+
+	padding: 0;
 }
 
 .category-list h3 {
@@ -183,6 +189,12 @@ a {
 
 
 
+/*Мои мысли насчет содержимого в меню*/
+.site-navigation {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
 
 
 
