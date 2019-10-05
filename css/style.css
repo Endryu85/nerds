@@ -1,5 +1,5 @@
 body {
- 	font-family: "RobotoRegular", Arial, sans-serif;
+ font-family: "RobotoRegular", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 700;
@@ -11,15 +11,37 @@ a {
 	text-decoration: none;
 }
 
-.button {
-	font: inherit;
+img {
+	max-width: 100%;
+	height: auto;
+}
 
+.visually-hidden:not(:focus):not(:active){
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.button {
+	display: inline-block;
+	padding: 18px 40px;
+
+	font: inherit;
 	text-align: center;
 	color: #ffffff;
 	vertical-align: middle;
 	text-transform: uppercase;
 
-	background: #000000;
+	background: #fb565a;
 	border: none;
 }
 
@@ -51,20 +73,50 @@ a {
 	padding: 0 10px;
 }
 
-.site-navigation {
-	width: 660px;
+.site-navigation,
+.cart-navigation {
 	margin: 0;
 	padding: 0;
-
 	list-style: none;
 }
 
-.cart-navigation {
-	width: 200px;
-	margin: 0;
-	padding: 0;
+.site-navigation {
+		display: flex;
+		flex-wrap: wrap;
+		width: 660px;
+}
 
-	list-style: none;
+.cart-navigation {
+	display: flex;
+	max-width: 160px;
+}
+
+.cart-navigation .cart-link {
+	position: relative;
+	display: block;
+	padding-left: 50px;
+}
+
+.cart-link::before {
+	content: "";
+	
+	position: absolute;
+	bottom: 23px;
+	left: 0;
+ /*Почему не прописывается картинка svg?*/
+	background-image: url("../img/cart-icon.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+	width: 15px;
+	height: 15px;
+}
+
+.site-navigation a,
+.cart-navigation a {
+	display: block;
+	padding: 15px;
+	color: #000;
 }
 
 .main-header-logo {
@@ -72,20 +124,11 @@ a {
 	height: 65px;
 }
 
-.site-navigation a,
-.cart-navigation a {
-	color: #000;
-}
-
 .site-navigation a:hover,
 .cart-navigation a:hover,
 .site-navigation a:focus,
 .cart-navigation a:focus{
   color: #fb565a;
-}
-
-.slider-info .button {
-	background: #fb565a;
 }
 
 /*Слайдер отработать позже.Скорее всего и текст,и картинка будет в одном блоке.*/
@@ -98,10 +141,16 @@ a {
 
 	background-color: #eeeeee;
 }
+/*Здесь задать может быть кнопке button или ссылку оставить?*/
+.slider-info a {
+	padding: 20px 55px;
+	color: #ffffff;
+}
 
 .slider-info a:hover {
 	background: #e74246;
 }
+
 
 .slider-info a:focus {
 	background: #d7373b;
@@ -112,15 +161,6 @@ a {
 	font-size: 55px;
 	line-height: 55px;
 }
-
-/*Здесь задать может быть кнопке button или ссылку оставить?*/
-.slider-info a {
-	padding: 20px 55px;
-
-	background-color: #000;
-	color: #ffffff;
-}
-
 
 .category-list  {
 	display: flex;
@@ -144,6 +184,10 @@ a {
 .catalog-category h3{
 	font-size: 24px;
 	line-height: 30px;
+}
+
+.category-item span {
+	margin-bottom: 66px;
 }
 
 .main-footer {
@@ -203,23 +247,6 @@ a {
 }
 
 /*прописать стили для рамки невалидного ввода данных формы*/
-
-
-
-
-/*Мои мысли насчет содержимого в меню*/
-.site-navigation {
-	display: flex;
-	justify-content: space-between;
-
-	padding: 50px 0;
-}
-
-.main-navigation-wrapper .container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
 
 
 
