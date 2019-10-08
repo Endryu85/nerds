@@ -41,7 +41,6 @@ img {
 	vertical-align: middle;
 	text-transform: uppercase;
 
-	background: #fb565a;
 	border: none;
 }
 
@@ -103,8 +102,8 @@ img {
 	position: absolute;
 	bottom: 23px;
 	left: 0;
- /*Почему не прописывается картинка svg?*/
-	background-image: url("../img/cart-icon.png");
+
+	background-image: url("../img/cart-icon.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 
@@ -151,7 +150,6 @@ img {
 	background: #e74246;
 }
 
-
 .slider-info a:focus {
 	background: #d7373b;
 }
@@ -160,6 +158,10 @@ img {
 	font-family: "RobotoMedium", Arial, sans-serif;
 	font-size: 55px;
 	line-height: 55px;
+}
+
+.index-slider .button {
+	background: #fb565a;
 }
 
 .category-list  {
@@ -190,18 +192,40 @@ img {
 	margin-bottom: 66px;
 }
 
-.main-footer {
-	padding: 70px 0;
-}
-
 .main-footer .container {
 	display: flex;
-	justify-content: flex-start;
 }
 
 .footer-social {
 	width: 260px;
+	
+	text-align: center;
+}
+
+.footer-social ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
 	padding: 0;
+
+	list-style: none;
+}
+
+.social-button {
+	display: flex;
+	align-items: center;	
+	justify-content: center;
+
+	width: 80px;
+	height: 80px;
+
+	background: #e1e1e1;
+}
+
+.social-button:hover,
+.social-button:focus {
+	background-color: #e74246;
 }
 
 .footer-frends {
@@ -209,29 +233,65 @@ img {
 	margin-left: 140px;
 }
 
-.footer-social ul {
-	padding-left: 0;
-	list-style: none;	
+.footer-frends b {
+  display: block;
+  margin-bottom: 25px;
+  font-family: "RobotoBold", Arial, sans-serif;
+  font-size: 36px;
+ 	line-height: 36px;
 }
 
-.footer-frends h3 {
-	font-family: "RobotoBold", Arial, sans-serif;
- font-size: 36px;
-	line-height: 36px;
+/*модальное окно pop-up*/
+
+.writeus {
+	width: 960px;
+	height: 590px;
+	padding: 80px;
+
+	box-shadow:5px 4px 3px 2px grey;
+	z-index: 1;
 }
 
+.writeus-info {
+	margin-bottom: 38px;
+	padding: 0;
 
-
-.modal {
-  color: #000000;
-}
-
-.writeus-modal h2 {
 	font-family: "RobotoMedium", Arial, sans-serif;
-
 	font-size: 45px;
 	line-height: 45px;
 }
+
+.writeus-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.writeus-item {
+	width: 360px;
+	height: 50px;
+}
+
+.writeus-item label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.writeus-form .button {
+ background: #fb565a
+}
+/*.writeus {
+	display: flex;
+	flex-wrap: wrap;
+	background: grey;
+	
+	width: 960px;
+	height: 590px;
+
+	z-index: 1;
+	box-shadow:5px 4px 3px 2px grey;
+}
+
 
 .writeus-modal input[type="text"]{
 	font: inherit;
@@ -244,19 +304,11 @@ img {
 
 .writeus-modal input:focus {
 	border: 2px solid #000000;
-}
+}*/
 
+/* стили кнопки
+.button-feedback {
+
+} */
 /*прописать стили для рамки невалидного ввода данных формы*/
-
-
-
-
-
-
-
-
-
-
-
-
 
