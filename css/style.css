@@ -16,7 +16,14 @@ img {
 	height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active){
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+}
+/*.visually-hidden:not(:focus):not(:active){
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -29,19 +36,35 @@ img {
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
-}
+}*/
 
 .button {
-	display: inline-block;
-	padding: 18px 40px;
+	display: block;
+	width: 240px;
+	padding: 13px 0;
 
-	font: inherit;
-	text-align: center;
+	font-size: 16px;
+	line-height: 18px;
 	color: #ffffff;
-	vertical-align: middle;
 	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
 
+	background-color: #fb565a;
+	border-radius: 3px;
 	border: none;
+}
+
+.button:hover,
+.button:focus {
+	background-color: #e74246;
+}
+
+.button:active {
+	color: rgba(255, 255, 255, 0.3);
+
+	background-color: #d7373b;
+	box-shadow: 0 3px rgba(0, 0, 0, 0.1) unset;
 }
 
 .main-header {
@@ -67,9 +90,10 @@ img {
 }
 
 .container {
-	width: 1160px;
+	width: 1200px;
 	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0 20px;
+	box-sizing: border-box;
 }
 
 .site-navigation,
@@ -133,7 +157,131 @@ img {
 /*Слайдер отработать позже.Скорее всего и текст,и картинка будет в одном блоке.*/
 
 /*как-то убрать верхний margin. И откуда он взялся?*/
-.index-slider {
+
+.slider {
+  position: relative;
+  
+  background-color: #eeeeee;
+}
+
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 100;
+  
+  width: 160px;
+  height: 18px;
+
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+
+.slider-controls label {
+  position: relative;
+  
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+  
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls label::after {
+  content: "";
+  
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  
+  width: 18px;
+  height: 18px;
+  
+  background: #ffffff;
+  
+  border-radius: 50%;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.slider-item {
+  display: none;
+  padding: 78px 0 80px 0;
+}
+
+.slider-item:nth-child(1) {
+  background-image: url("../img/slide1.png");
+  background-repeat: no-repeat;
+  background-position: 93% 18px;
+}
+
+.slider-item:nth-child(2) {
+  background-image: url("../img/slide2.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.slider-item:nth-child(3) {
+  background-image: url("../img/slide3.png");
+  background-repeat: no-repeat;
+  background-position: 100% 20px;
+}
+
+#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
+  display: block;
+}
+
+#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+  display: block;
+}
+
+#product-3:checked ~ .slider-list .slider-item:nth-child(3) {
+  display: block;
+}
+
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
+#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
+.slider-item h3 {
+  max-width: 600px;
+  margin: 0;
+  margin-bottom: 27px;
+  
+  font-family: "RobotoMedium", Arial, sans-serif;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.slider-item p {
+  max-width: 430px;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+/*.index-slider {
 	display: flex;
 	margin: 0 auto;
 	margin-bottom: 80px; 
@@ -141,7 +289,7 @@ img {
 	background-color: #eeeeee;
 }
 /*Здесь задать может быть кнопке button или ссылку оставить?*/
-.slider-info a {
+/*.slider-info a {
 	padding: 20px 55px;
 	color: #ffffff;
 }
@@ -162,7 +310,7 @@ img {
 
 .index-slider .button {
 	background: #fb565a;
-}
+}*/
 
 .category-list  {
 	display: flex;
@@ -222,11 +370,14 @@ img {
 
 	border-radius: 50%;
 	background: #e1e1e1;
+
+	transition: background-color .5s;
 }
 
 .social-button:hover,
 .social-button:focus {
 	background-color: #e74246;
+	/*transition: background-color 1s;*/
 }
 
 .footer-frends {
