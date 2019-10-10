@@ -34,14 +34,32 @@
 	 </div>
 		</nav>
 	</header>
+	<div>
+		<div class="container">
+			<h2>Магазин готовых шаблонов</h1>
+		</div>
+	</div>
 	<main class="container">
 		<!-- Какой класс дать? -->
-		<div>
-			<h1>Магазин готовых шаблонов</h1>
-		</div>
 		<section class="filters">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
 			<form action="" class="filter" method="get">
+				<fieldset class="filter-item">
+					<legend>Стоимость:</legend>
+					<div class="range-filter">
+						<div class="range-controls">
+							<div class="scale">
+								<div class="bar" style="margin-left: 20%; width: 30%"></div>
+							</div>
+							<div class="toggle toggle-min"></div>
+							<div class="toggle toggle-max"></div>
+						</div>
+						<div class="price-controls">
+							<label class="min-price">от <input type="text" value="0"></label>
+							<label class="max-price">до <input type="text" value="1500"></label>
+						</div>
+					</div>
+				</fieldset>
 				<fieldset>
 					<legend>Сетка:</legend>
 					<ul>
@@ -229,6 +247,6 @@
 				<button class="button" type="submit">Отправить</button>
 			</form>
 		</div>
-		</section>	
+	</section>	
 </body>
 </html>
