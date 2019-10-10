@@ -411,32 +411,38 @@ img {
 	text-align: right;
 }
 
-.category-list  {
+.catalog-list {
 	display: flex;
-	justify-content: space-between;
-
-	list-style: none;
-
-	padding: 0;
+	flex-wrap: wrap;
 }
 
-.category-list h3 {
-	font-family: "RobotoBold", Arial, sans-serif;
-	list-style: none; 
-}
-
-.category-item {
+.catalog-item {
 	width: 360px;
+	list-style: none;
 }
 
-/*что это?откуда взялось?*/
-.catalog-category h3{
-	font-size: 24px;
-	line-height: 30px;
+.pagination-list {
+	display: flex;
 }
 
-.category-item span {
-	margin-bottom: 66px;
+.pagination-item {
+	/*padding: 5px 5px;*/
+	margin: 5px;
+	border-radius: 5px;
+
+	background-color: grey;
+	list-style: none;
+}
+
+.pagination-list li {
+	width: auto;
+	text-align: center;
+}
+
+.pagination-item a {
+	width: 200px;
+	color: black;
+	padding: 20px;
 }
 
 .main-footer .container {
