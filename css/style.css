@@ -66,25 +66,22 @@ img {
 }
 
 .main-header {
-	width: 100%;
+	min-width: 100%;
 	margin: 0 auto;
+	padding-top: 50px;
+
+	background: #eeeeee;
 }
 
-.main-navigation {
+.main-navigation .container {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
+	flex-direction: row;
 
 	font-family: "RobotoMedium", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 30px;
 
-	background-color: #eeeeee;
-}
-
-.main-navigation-wrapper .container {
-	display: flex;
-	justify-content: space-between;
 }
 
 .container {
@@ -109,6 +106,7 @@ img {
 
 .cart-navigation {
 	display: flex;
+	margin-left: auto;
 	max-width: 160px;
 }
 
@@ -143,18 +141,28 @@ img {
 .main-header-logo {
 	width: 160px;
 	height: 65px;
+	padding: 23px 20px; /*перепроверить данные*/
 }
 
 .site-navigation a:hover,
 .cart-navigation a:hover,
 .site-navigation a:focus,
-.cart-navigation a:focus{
-  color: #fb565a;
+.cart-navigation a:focus {
+ color: #fb565a;
 }
 
-/*Слайдер отработать позже.Скорее всего и текст,и картинка будет в одном блоке.*/
+.inner-page-info {
+ width: 100%;
+ height: 430px;
+	margin: 0 auto;
+	background: #eeeeee;
+}
 
-/*как-то убрать верхний margin. И откуда он взялся?*/
+.inner-page-info .page-title {
+	padding: 0;
+	margin: 0;
+	/*прописать свойства для текста*/
+}
 
 .slider {
   position: relative;
@@ -310,6 +318,60 @@ img {
 	background: #fb565a;
 }*/
 
+.filter {
+	width: auto; /*замерить*/
+}
+
+.filter fieldset {
+	border: none;
+}
+
+.filter legend {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.filter ul {
+	list-style: none;
+	line-height: 18px;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #663d15;
+}
+
+.filter-input:disabled + label {
+  color: #000000;
+
+  opacity: 0.5;
+}
+
+.catalog-columns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.catalog {
+	width: 780px;
+}
+
+.catalog-list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+ margin-bottom: 25px; /*перепроверить отступ на макете*/
+
+	list-style: none;
+}
+
+.catalog-item {
+	width: 360px;
+	margin-bottom: 20px; /*перепроверить отступ на макете*/
+	margin-right: 20px; /*перепроверить отступ на макете*/
+}
+
 .filter-item {
 	margin: 0;
 	padding: 0;
@@ -411,22 +473,7 @@ img {
 	text-align: right;
 }
 
-.catalog-list {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.catalog-item {
-	width: 360px;
-	list-style: none;
-}
-
-.pagination-list {
-	display: flex;
-}
-
 .pagination-item {
-	/*padding: 5px 5px;*/
 	margin: 5px;
 	border-radius: 5px;
 
