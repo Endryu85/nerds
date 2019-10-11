@@ -456,16 +456,48 @@ img {
 	flex-wrap: wrap;
 	padding: 0;
 	margin: 0;
- margin-bottom: 25px; /*перепроверить отступ на макете*/
+  margin-bottom: 25px; /*перепроверить отступ на макете*/
 
 	list-style: none;
 }
 
+
+
+
+
+
 .catalog-item {
+	position: relative; /*добавил для блока при ховер*/
 	width: 360px;
 	margin-bottom: 20px; /*перепроверить отступ на макете*/
 	margin-right: 20px; /*перепроверить отступ на макете*/
 }
+
+.catalog-item p {
+	text-align: center;
+}
+
+.actions {
+	position: absolute;
+	display: flex;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+
+	bottom: 23px;
+
+	width: 360px;
+	height: 260px;
+
+	background: #eeeeee;
+	
+	z-index: 10;
+}
+
+.catalog-item:hover .actions {
+    display:block;
+}
+
 
 .filter-item {
 	margin: 0;
