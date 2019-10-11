@@ -174,7 +174,7 @@ img {
   position: absolute;
   left: 50%;
   bottom: 104px;
-  z-index: 100;
+  z-index: 5;
   
   width: 160px;
   height: 18px;
@@ -489,9 +489,10 @@ img {
 	width: 360px;
 	height: 260px;
 
-	background: #eeeeee;
-	
+	background-color: #eeeeee;
+
 	z-index: 10;
+
 }
 
 .catalog-item:hover .actions {
@@ -700,18 +701,120 @@ img {
  	line-height: 36px;
 }
 
-/*модальное окно pop-up*/
 
-.writeus {
-	width: 960px;
-	height: 590px;
-	padding: 80px;
 
-	box-shadow:5px 4px 3px 2px grey;
-	z-index: 1;
+.modal {
+	position: fixed;
+
+	color: black;
+
+	background-color: #ffffff;
+
 }
 
-.writeus-info {
+.modal-writeus {
+	top: 120px;
+	left: 50%;
+
+	width: 960px;
+	height: 590px;
+	margin-left: -550px;
+
+	box-shadow: 0 20px 40px #000101;
+	z-index: 15;
+}
+
+.modal-close {
+	position: absolute;
+	top: 78px;
+	right: 90px;
+
+	width: 22px;
+	height: 22px;
+
+	font-size: 0;
+
+	background-color: transparent;
+	border: 0;
+
+	cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+	content: "";
+
+	position: absolute;
+	top: 10px;
+	left: 2px;
+
+	width: 19px;
+	height: 3px;
+
+	background-color: #fecccd;
+}
+
+.modal-close::before {
+	transform: rotate(45deg);
+}
+
+.modal-close::after {
+	transform: rotate(-45deg);
+}
+
+.modal-writeus h2 {
+	margin: 0;
+	margin-bottom: 50px;
+	margin-top: 83px;
+	margin-left: 100px;
+
+	font-family: "RobotoMedium", Arial, sans-serif;
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.writeus-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+ 
+ width: 760px;
+	margin: 83px 100px;
+}
+
+.writeus-form label {
+	display: block;
+	margin-bottom: 12px;
+}
+
+.writeus-form p {
+	margin: 0;
+	margin-bottom: 60px;
+}
+
+.writeus-form input[type="text"] {
+	box-sizing: border-box;
+	width: 360px;
+	padding: 14px 10px;
+
+	font: inherit;
+	color: #b1b1b1;
+
+	border: 2px solid #d7dcde;
+}
+
+.writeus-modal input:hover {
+	border: 2px solid #b4b9bb;
+}
+
+.writeus-modal input:focus {
+	border-color #000000;
+}
+
+
+/*модальное окно pop-up*/
+
+/*.writeus-info h2 {
 	margin-bottom: 38px;
 	padding: 0;
 
@@ -739,6 +842,7 @@ img {
 .writeus-form .button {
  background: #fb565a
 }
+
 /*.writeus {
 	display: flex;
 	flex-wrap: wrap;

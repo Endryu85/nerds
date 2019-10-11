@@ -175,25 +175,23 @@
 		  </div>	
 		</footer>
 
-		<!-- <section class="writeus">
-		  <div class="writeus-container">
-			<p class="writeus-info">Напишите нам</p>
-			<form action="" class="writeus-form" method="post">
-				<p class="writeus-item">
-					<label for="writeus-name">Ваше имя:</label>
-					<input type="text" id="writeus-name" value="Имя Фамилия" name="name" placeholder="Имя Фамилия">
-				</p>
-				<p class="writeus-item">
-					<label for="e-mail">Ваш e-mail:</label>
-					<input type="text" id="e-mail" name="mail" placeholder="email@example.com">
-			    </p>
-				<p class="writeus-item">
-					<label for="placeholder">Текст письма:</label>
-					<input type="text" id="placeholder" name="placeholder" placeholder="В свободной форме">
-				</p>
-				<button class="button-writeus" type="button">Закрыть</button>
-				<button class="button" type="submit">Отправить</button>
-			</form>
-		  </div>
-		</section>  -->	
+<section class="modal modal-writeus">
+	<h2>Напишите нам</h2>
+	<form action="" class="writeus-form" method="post">
+		<p>
+			<label for="writeus-name">Ваше имя:</label>
+			<input type="text" id="writeus-name" name="name" value="Имя Фамилия" placeholder="Имя Фамилия">
+		</p>
+		<p>
+			<label for="e-mail">Ваш e-mail:</label>
+			<input type="text" id="e-mail" name="mail" placeholder="email@example.com">
+		</p>
+		<p>
+			<label for="placeholder">Текст письма:</label>
+			<input class="child-active" type="text" id="placeholder" name="placeholder" placeholder="В свободной форме">
+		</p>
+	<button class="button" type="submit">Отправить</button>
+	</form>
+	<button class="modal-close" type="button">Закрыть</button>
+</section>
 </body>
