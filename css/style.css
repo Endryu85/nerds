@@ -713,8 +713,9 @@ img {
 }
 
 .modal-writeus {
-	top: 120px;
-	left: 50%;
+	/*display: none;*/
+	top: 15px;
+	left: 55%;
 
 	width: 960px;
 	height: 590px;
@@ -874,4 +875,3 @@ img {
 
 } */
 /*прописать стили для рамки невалидного ввода данных формы*/
-
