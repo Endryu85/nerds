@@ -235,27 +235,25 @@
 </div>	
 </footer>
 
-<section class="writeus">
-	<div class="writeus-container">
-		<p class="writeus-info">Напишите нам</p>
+<section class="modal modal-writeus">
+		<h2>Напишите нам</h2>
 		<form action="" class="writeus-form" method="post">
-			<p class="writeus-item">
+			<p>
 				<label for="writeus-name">Ваше имя:</label>
-				<input type="text" id="writeus-name" value="Имя Фамилия" name="name" placeholder="Имя Фамилия">
+				<input type="text" id="writeus-name" name="name" value="Имя Фамилия" placeholder="Имя Фамилия">
 			</p>
-			<p class="writeus-item">
+			<p>
 				<label for="e-mail">Ваш e-mail:</label>
 				<input type="text" id="e-mail" name="mail" placeholder="email@example.com">
 			</p>
-			<p class="writeus-item">
+			<p>
 				<label for="placeholder">Текст письма:</label>
-				<input type="text" id="placeholder" name="placeholder" placeholder="В свободной форме">
+				<textarea type="text" id="placeholder" name="placeholder" placeholder="В свободной форме"></textarea>
 			</p>
-			<button class="button" type="button">Закрыть</button>
-			<button class="button" type="submit">Отправить</button>
+		<button class="button" type="submit">Отправить</button>
 		</form>
-	</div>
-</section>	
+		<button class="modal-close" type="button">Закрыть</button>
+	</section>
 </body>
 
 

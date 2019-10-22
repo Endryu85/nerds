@@ -541,12 +541,57 @@ img {
 	list-style: none;
 }
 
-/*здесь выставить картинки*/
-.logos {
+.index-columns {
 	display: flex;
+	justify-content: space-between;
+
 }
 
+.studio-information {
 
+}
+
+.studio-information-2 {
+
+}
+
+.logos {
+	display: flex;
+	justify-content: space-around;
+
+	padding: 0;
+	margin-top: 50px;
+
+	list-style: none;
+}
+
+.logos-img {
+	display: flex;
+	align-items: center;
+ justify-content: space-around;
+	position: relative;
+
+	width: 280px;
+	min-height: 180px;
+}
+
+.logos-img::after {
+	content: "";
+	position: absolute;
+
+	right: 0;
+	top: 45px;
+
+	width: 2px;
+	height: 80px;
+
+	background: #eeeeee;
+}
+
+.logos-img:last-child:after {
+	content: "";
+	width: 0;
+}
 
 .catalog-columns {
 	display: flex;
