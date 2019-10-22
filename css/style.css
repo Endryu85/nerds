@@ -541,6 +541,13 @@ img {
 	list-style: none;
 }
 
+/*здесь выставить картинки*/
+.logos {
+	display: flex;
+}
+
+
+
 .catalog-columns {
 	display: flex;
 	justify-content: space-between;
@@ -605,7 +612,7 @@ img {
 
 .pagination-item {
 	margin-right: 5px;
-	/*border: 2px solid #a6a6a6 ;*/
+	margin-bottom: 60px;
 }
 
 .pagination-item:last-child {
@@ -639,19 +646,21 @@ img {
 	background-color: #eeeeee;
 }
 
+.map {
+	margin-bottom: 70px;	
+}
+
 .main-footer .container {
 	display: flex;
+	min-height: 225px; 
 }
 
 .footer-social {
 	width: 260px;
-	
-	text-align: center;
 }
 
 .footer-social ul {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 0 auto;
 	padding: 0;
@@ -676,7 +685,7 @@ img {
 .social-button:hover,
 .social-button:focus {
 	background-color: #e74246;
-	/*transition: background-color 1s;*/
+	transition: background-color 1s;
 }
 
 .footer-frends {
@@ -697,7 +706,6 @@ img {
 	position: fixed;
 
 	color: black;
-
 	background-color: #ffffff;
 }
 
