@@ -12,7 +12,7 @@
 <body>
 	<header class="main-header">
 		<nav class="main-navigation">
-			<div class="main-navigation-wrapper">
+			<!-- <div class="main-navigation-wrapper"> -->
 				<div class="container">
 					<a class="main-header-logo" href="index.html">
 						<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
@@ -111,22 +111,29 @@
 			</section>	
 
 			<div class="index-columns">
-				<section class="studio-information">
-					<p>Мы — маленькая, но гордая
-дизайн-студия из Краснодара.
-					</p> <br>
-					<p>Выполняем заказы на разработку:
-					</p>
-					<ul>
+				<section class="studio-information-left">
+					<h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.
+					</h3>
+					<p class="about-us">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
+					превыше креатива. Работаем не покладая рук, как роботы.</p>
+					<p class="percentage-ratio">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
+					<ul class="list-ratio">
 						<li>Веб-сайтов любой сложности</li>
 						<li>Мобильных приложений для iOS и Android</li>
 						<li>Слайдшоу и видео для корпоративных презентаций</li>
 					</ul>
 				</section>
-				<section class="studio-information-2">
-					<img src="img/nerds-illustration.jpg" alt="">
-					<p>C 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
-
+				<section class="studio-information-right">
+					<img src="img/nerds-illustration.jpg" alt="логотип Nerds">
+					<p class="accuracy">C 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
+					<ul class="group-indicators">
+						<li class="indicator"><p>146<span>%</span></p></li>
+						<li class="indicator"><p>100<span>%</span></p></li>
+						<li class="indicator"><p>50<span>%</span></p></li>
+						<li class="description">Уровень<br>самоотдачи</li>
+						<li class="description">Соблюдение<br>сроков</li>
+						<li class="description">Минимальная<br>предоплата</li>
+					</ul>
 				</section>
 			</div>
 
@@ -142,7 +149,7 @@
 		</main>
 		<section class="map">
 			<iframe src="https://yandex.ru/map-widget/v1/-/CGDcQE1N" width="100%" height="415" frameborder="1" allowfullscreen="true"></iframe>
-	 </section>
+		</section>
 
 		<footer class="main-footer">
 			<div class="container">
@@ -207,7 +214,7 @@
 				<label for="placeholder">Текст письма:</label>
 				<textarea type="text" id="placeholder" name="placeholder" placeholder="В свободной форме"></textarea>
 			</p>
-		<button class="button" type="submit">Отправить</button>
+			<button class="button" type="submit">Отправить</button>
 		</form>
 		<button class="modal-close" type="button">Закрыть</button>
 	</section>
