@@ -198,6 +198,9 @@ img {
   position: relative;
   
   background-color: #eeeeee;
+		
+		margin: 0;	
+  margin-bottom: 	80px;
 }
 
 .slider-controls {
@@ -557,9 +560,15 @@ img {
 	list-style: none;
 }
 
+.category-item p {
+		margin: 0;	
+}
+
 .index-columns {
 	display: flex;
 	justify-content: space-between;
+
+	border-bottom: 2px solid #eeeeee;
 }
 
 .studio-information-left {
@@ -617,6 +626,7 @@ img {
 .studio-information-right {
 	width: 360px;
 	margin-top: 40px;
+	padding-bottom: 80px;
 }
 
 .studio-information-right img {
@@ -661,14 +671,21 @@ img {
 	margin-top: 27px;
 }
 
+.logos-offer {
+	min-height: 180px;
+	border-bottom: 2px solid #eeeeee;
+	margin-bottom: 80px;
+}
+
 .logos {
 	display: flex;
 	justify-content: space-around;
 
 	padding: 0;
-	margin-top: 50px;
+	margin: 0;	
 
 	list-style: none;
+
 }
 
 .logos-img {
@@ -743,7 +760,7 @@ img {
 	text-align: center;
 }
 
-.actions {
+/*.actions {
 	position: absolute;
 	display: flex;
 	display: none;
@@ -758,10 +775,10 @@ img {
 	background-color: #eeeeee;
 
 	z-index: 10;
-}
+}*/
 
-.catalog-item:hover .actions {
-    display:block;
+.catalog-list .catalog-item:hover {
+	background-image: url("../img/SedonaHover.png") no-repeat;
 }
 
 .pagination-list {
