@@ -553,6 +553,7 @@ img {
 .category ul {
 	display: flex;
 	justify-content: space-between;
+
 	padding: 0;
 }
 
@@ -562,6 +563,18 @@ img {
 
 .category-item p {
 		margin: 0;	
+}
+
+.catalog-item-order .button {
+	width: 160px;
+}
+
+.category-item:nth-child(2) a{
+	background: #00ca74;
+}
+
+.category-item:nth-child(3) a{
+	background: #efc849;
 }
 
 .index-columns {
@@ -776,10 +789,6 @@ img {
 
 	z-index: 10;
 }*/
-
-.catalog-list .catalog-item:hover {
-	background-image: url("../img/SedonaHover.png") no-repeat;
-}
 
 .pagination-list {
 	display: flex;
