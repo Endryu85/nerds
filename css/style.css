@@ -769,15 +769,15 @@ img {
 		margin-bottom: 50px;
 	}
 
-.sort > p {
-	margin: 0;
-	margin-top: 60px;
-}
+	.sort > p {
+		margin: 0;
+		margin-top: 60px;
+	}
 
 	.sort-right {
 		display: flex;
 		justify-content: space-between;
-	
+
 		width: 360px;
 		margin-top: 60px;
 	}
@@ -811,6 +811,12 @@ img {
 		width: 780px;
 	}
 
+.svg {
+	margin: 0;
+	padding: 0;
+}
+
+
 	.catalog-list {
 		display: flex;
 		flex-wrap: wrap;
@@ -824,7 +830,6 @@ img {
 	}
 
 	.catalog-item {
-		position: relative; /*добавил для блока при ховер*/
 		width: 360px;
 		margin-bottom: 20px; /*перепроверить отступ на макете*/
 	}
