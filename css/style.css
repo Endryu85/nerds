@@ -394,8 +394,6 @@ img {
 		background-image: url(../img/checkbox-on.svg);
 		background-repeat: no-repeat;
 		background-position: 0 0;
-
-		opacity: .6;
 	}
 
 	.filter-input-radio + label::before {
