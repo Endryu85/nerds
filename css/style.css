@@ -188,10 +188,14 @@ img {
 	}
 
 	.inner-page-info .page-title {
-		margin: 0;
+		font-family: "RobotoMedium", Arial, sans-serif;
 		text-align: center;
+		font-size: 55px;
+		line-height: 55px;
+
+		margin: 0;
 		padding: 100px 0;
-		/*прописать свойства для текста*/
+		
 	}
 
 	.slider {
@@ -436,6 +440,7 @@ img {
 	}
 
 	.filter .button {
+		font-family: "RobotoMedium", Arial, sans-serif;
 		color: black;
 
 		background: #eeeeee;
@@ -895,9 +900,9 @@ img {
 		text-align: center;
 	}
 
-.info button {
-	margin-bottom: 45px;
-}
+	.info button {
+		margin-bottom: 45px;
+	}
 
 	.fill {
 		fill: #e9e9e9;
@@ -971,6 +976,13 @@ img {
 		background: #ffffff;
 	}
 
+	.call-me p:first-child {
+		font-size: 18px;
+		line-height: 30px;
+
+		font-family: "RobotoBold", Arial, sans-serif;
+	}
+
 	.main-footer .container {
 		display: flex;
 		min-height: 225px; 
@@ -1041,6 +1053,55 @@ img {
 
 		box-shadow: 0 20px 40px #000101;
 		z-index: 15;
+	}
+	@keyframes bounce {
+		0% {
+			transform: translateY(-2000px);
+		}
+
+		70% {
+			transform: translateY(30px);
+		}
+
+		90% {
+			transform: translateY(-10px);
+		}
+
+		100% {
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes shake {
+		0%,
+		100% {
+			transform: translateX(0);
+		}
+
+		10%,
+		30%,
+		50%,
+		70%,
+		90% {
+			transform: translateX(-10px);
+		}
+
+		20%,
+		40%,
+		60%,
+		80% {
+			transform: translateX(10px);
+		}
+	}
+
+	.modal-show {
+		display: block;
+
+		animation: bounce 0.6s;
+	}
+
+	.modal-error {
+		animation: shake 0.6s;
 	}
 
 	.modal-close {
@@ -1219,7 +1280,3 @@ img {
 
 	} */
 	/*прописать стили для рамки невалидного ввода данных формы*/
-/*
-.fill {
-	background: #000;
-}*/
